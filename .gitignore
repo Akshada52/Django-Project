@@ -1,0 +1,48 @@
+# Python cache and compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+
+# Django stuff:
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+
+# Environment / virtualenv
+.env
+venv/
+ENV/
+env/
+.venv/
+
+# Static files collected for production
+/staticfiles/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Coverage / testing
+.coverage
+htmlcov/
+.tox/
+pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Node / frontend dependencies if any
+node_modules/
+
+# Others
+*.bak
+*.swp

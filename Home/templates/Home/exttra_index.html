@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block title %}AK Icecreams{% endblock %}
+
+{% block content %}
+<!-- Hello/templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">AK Icecreams</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/services">Chocobar</a></li>
+                            <li><a class="dropdown-item" href="{ service_name='familypack' %}">Family Pack</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="{ service_name='icecreams' %}">Icecreams</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    
+
+<div class="container-fluid my-4 px-0">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner shadow rounded-4">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="https://i.pinimg.com/736x/23/83/a2/2383a284dc06c03c3be1b8d642977dd2.jpg" class="d-block  rounded-4" alt="Ice Cream Image 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="bg-dark text-light p-2 rounded">Delicious Chocolate Ice Cream</h5>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/736x/c9/2f/79/c92f79d714e0b5c62c27552dbb17773b.jpg" class="d-block  rounded-4" alt="Ice Cream Image 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="bg-dark text-light p-2 rounded">Refreshing Strawberry Delight</h5>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/736x/ce/da/f6/cedaf68b2fa4a7c8e7d3dfdcff374a5a.jpg" class="d-block  rounded-4" alt="Ice Cream Image 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="bg-dark text-light p-2 rounded">Classic Vanilla Elegance</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container my-3">
+<h1 class="my-4">select from the range of icecreams</h1>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.pinimg.com/736x/bf/f9/b3/bff9b32a08ded4c2be5a8f10e7d7cf5e.jpg" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><h4>Classic Flavors</h4></text></svg>
+            <div class="card-body">
+              <p class="card-text">Vanilla, Chocolate, Strawberry, Butterscotch, Mango, Coffee</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.pinimg.com/736x/8c/75/17/8c7517bea66aace0b5f5000629c9210b.jpg" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><h4>Premium & Gourmet</h4></text></svg>
+            <div class="card-body">
+              <p class="card-text">Belgian Chocolate,salted caramel, French Vanilla, Pistachio</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.pinimg.com/736x/64/d6/04/64d604fcdc3d322bfd46c815f878cf39.jpg" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><h4>Fruity & Refreshing</h4></text></svg>
+            <div class="card-body">
+              <p class="card-text">Blueberry, Raspberry, Black Currant, Lemon Sorbet, Lychee</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.pinimg.com/736x/53/8d/fd/538dfdf4bc2de2a0099a90b23652c647.jpg" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><h4>Nutty & Crunchy</h4></text></svg>
+            <div class="card-body">
+              <p class="card-text">Almond Crunch, Cashew Delight, Pecan Praline, Hazelnut Swirl</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+         <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.pinimg.com/736x/3d/21/02/3d210258f436b07ef043b871f4a7d2eb.jpg" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><h4>Exotic & Fusion </h4></text></svg>
+            <div class="card-body">
+              <p class="card-text"> Matcha Green Tea, Wasabi, Saffron Pistachio, Rose Falooda</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.pinimg.com/736x/18/e4/3d/18e43d68940aab34507a3b0746086275.jpg" width="100%" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><h4>Vegan & Healthy</h4></text></svg>
+            <div class="card-body">
+              <p class="card-text">Banana Peanut, Avocado Lime, Coconut Mango, Chia Berry</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+{% endblock %}
+

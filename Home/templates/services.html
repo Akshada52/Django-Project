@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <header class="text-center mb-5">
+        <h1 class="display-4">Our Ice Cream Services</h1>
+        <p class="lead">From single scoops to party-sized servings, we offer the best ice cream experience for every occasion!</p>
+    </header>
+
+    <!-- Service Section -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Service 1: Custom Ice Cream Creation -->
+        <div class="col">
+            <div class="card shadow-sm border-light rounded">
+                <img src="https://i.pinimg.com/736x/9b/7e/5e/9b7e5eadd52fa3b7ba212d5d74eb2d99.jpg" class="card-img-top" alt="Custom Ice Cream">
+                <div class="card-body">
+                    <h5 class="card-title">Custom Ice Cream Creation</h5>
+                    <p class="card-text">Choose from a variety of flavors and toppings to create your perfect ice cream. Customize your scoop just the way you like!</p>
+                    <a href="/contact" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Ice Cream Catering -->
+        <div class="col">
+            <div class="card shadow-sm border-light rounded">
+                <img src="https://i.pinimg.com/736x/64/65/74/64657495d9671033411a4646fc43f1d2.jpg" class="card-img-top" alt="Ice Cream Catering">
+                <div class="card-body">
+                    <h5 class="card-title">Ice Cream Catering</h5>
+                    <p class="card-text">We cater ice cream for your events! Choose from a range of options, including scooping stations and ice cream bars.</p>
+                    <a href="/contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: Ice Cream Delivery -->
+        <div class="col">
+            <div class="card shadow-sm border-light rounded">
+                <img src="https://i.pinimg.com/736x/f1/49/d6/f149d6e3772404169e6b02cdd0eb3b07.jpg" class="card-img-top" alt="Ice Cream Delivery">
+                <div class="card-body">
+                    <h5 class="card-title">Ice Cream Delivery</h5>
+                    <p class="card-text">Get your favorite flavors delivered straight to your door. Fast and reliable service for your ice cream cravings!</p>
+                    <a href="/pricing" class="btn btn-primary">Order Now</a>  <!-- Changed to /pricing -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Features -->
+    <section class="mt-5 text-center">
+        <h2 class="display-5 mb-4">Why Choose Us?</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card text-center shadow-sm border-light rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh & Quality Ingredients</h5>
+                        <p class="card-text">We use only the finest ingredients to create rich, creamy, and delicious ice cream in every scoop.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center shadow-sm border-light rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">Creative Flavors</h5>
+                        <p class="card-text">Our unique and seasonal flavors will surprise and satisfy your taste buds with every bite.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center shadow-sm border-light rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">Family Friendly</h5>
+                        <p class="card-text">Our ice cream is perfect for family gatherings, kids' parties, and anyone who loves a sweet treat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="mt-5 text-center bg-light py-4">
+        <h2 class="display-5 mb-4">What Our Customers Say</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="testimonial p-4 shadow-sm rounded">
+                    <p class="lead">"The best ice cream I've ever had! Their custom flavor options are out of this world. Can't wait to try more!"</p>
+                    <footer>- Sakshi.</footer>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial p-4 shadow-sm rounded">
+                    <p class="lead">"Amazing catering service for our company event. Everyone loved the ice cream and had so much fun!"</p>
+                    <footer>- samruddhi.</footer>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial p-4 shadow-sm rounded">
+                    <p class="lead">"Fast delivery and the ice cream was still cold and delicious when it arrived. A total game changer!"</p>
+                    <footer>- Diksha.</footer>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
